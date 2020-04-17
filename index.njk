@@ -1,0 +1,24 @@
+---
+title: All posts
+layout: default.njk
+pagination:
+  data: collections.posts
+  size: 2
+  alias: posts
+---
+
+<section class="posts">
+  <ul>
+    {%- for post in posts %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor %}
+  </ul>
+
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">prev</a>
+  {% endif %}
+
+  {% if pagination.href.next%}
+    <a href="{{ pagination.href.next }}">next</a>
+  {% endif %}
+</section>
