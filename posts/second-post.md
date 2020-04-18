@@ -1,5 +1,6 @@
 ---
 title: Second post
+layout: default.njk
 ---
 
 # {{ title }}

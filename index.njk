@@ -8,17 +8,21 @@ pagination:
 ---
 
 <section class="posts">
-  <ul>
-    {%- for post in posts %}
-      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-    {%- endfor %}
-  </ul>
+  <div class="posts-content">
+    <ul class="post-list">
+      {%- for post in posts %}
+        <li><a class="post-title" href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- endfor %}
+    </ul>
+    
+    <section class="pagination"> 
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">prev</a>
+      {% endif %}
 
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">prev</a>
-  {% endif %}
-
-  {% if pagination.href.next%}
-    <a href="{{ pagination.href.next }}">next</a>
-  {% endif %}
+      {% if pagination.href.next%}
+        <a href="{{ pagination.href.next }}">next</a>
+      {% endif %}
+    </section>
+  </div> 
 </section>

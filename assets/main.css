@@ -1,3 +1,74 @@
-body {
-  background: yellow;
+:root {
+  --font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-weight-light: 300;
+  --font-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 100%;
+  font-family: var(--font-family);
+  border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item > a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--font-color);
+  font-variant: small-caps;
+  font-size: 1.1em;
+}
+
+.posts {
+  max-width: 100%;
+}
+
+.posts-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.post-title {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.5em;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+}
+
+.post-title:hover {
+  border-bottom: 1px solid #eee;
+}
+
+.pagination {
+  padding: 20px;
 }

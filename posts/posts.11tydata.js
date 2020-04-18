@@ -1,6 +1,4 @@
-module.exports = function () {
-  return {
-    layout: 'default.njk',
-    tags: 'posts',
-  }
-}
+module.exports = async () => ({
+  layout: 'default.njk',
+  tags: 'posts',
+})

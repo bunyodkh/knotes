@@ -1,7 +1,11 @@
 ---
 title: First post
+layout: default.njk
 ---
 
-# {{ title }}
+<article>
+  <h1>{{title}}</h1>
 
-some useless info
+  <p>some useless info</p> 
+</article>
+
