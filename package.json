@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bunyodkh/knotes#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "luxon": "^1.23.0"
   }
 }

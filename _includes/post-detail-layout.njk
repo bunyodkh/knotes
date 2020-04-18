@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "head.njk" %}
+</head>
+<body>
+  {% include "header.njk" %}
+
+  <article class="post-detail">
+    <div class="post-detail-content">
+      <span class="breadcrumbs"><a href="/">all posts</a></span>  
+      {{ content | safe }}
+    </div>
+  </article>
+
+</body>
+</html>

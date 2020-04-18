@@ -1,6 +1,7 @@
 ---
 title: Second post
-layout: default.njk
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+date: 2020-07-04
 ---
 
 # {{ title }}

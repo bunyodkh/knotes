@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ global.preTitle }} | {{ title }}</title>
-  <link rel="stylesheet" href="/assets/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  {% include "head.njk" %}
 </head>
 <body>
   
-  <header class="header">
-    <div class="header-content">
-      <h1 class="logo"><a href="/">bnotes</a></h1>
-      <nav class="nav">
-        <ul class="nav-items">
-          <li class="nav-item"><a href="/about">about</a></li>
-        </ul>
-      </nav>
-    </div>  
-  </header>
+  {% include "header.njk" %}
 
-  <main>
-    {{ content | safe }}
-  </main>
+  {{ content | safe }}
 
 </body>
 </html>

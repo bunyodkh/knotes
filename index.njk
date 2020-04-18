@@ -3,7 +3,7 @@ title: All posts
 layout: default.njk
 pagination:
   data: collections.posts
-  size: 2
+  size: 5
   alias: posts
 ---
 
@@ -11,7 +11,17 @@ pagination:
   <div class="posts-content">
     <ul class="post-list">
       {%- for post in posts %}
-        <li><a class="post-title" href="{{ post.url }}">{{ post.data.title }}</a></li>
+        <li class="post">
+          <a class="post-title" href="{{ post.url }}">{{ post.data.title }}</a>
+          
+          {% if post.data.description %}
+            <p class="post-description">{{ post.data.description }}</p>
+          {% endif %}
+          
+          <div class="meta">
+            <time class="post-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          </div> 
+        </li>
       {%- endfor %}
     </ul>
     
@@ -20,7 +30,7 @@ pagination:
         <a href="{{ pagination.href.previous }}">prev</a>
       {% endif %}
 
-      {% if pagination.href.next%}
+      {% if pagination.href.next %}
         <a href="{{ pagination.href.next }}">next</a>
       {% endif %}
     </section>

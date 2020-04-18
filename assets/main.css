@@ -1,7 +1,10 @@
 :root {
   --font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 500;
   --font-color: #000;
+  --content-width: 800px;
 }
 
 * {
@@ -17,7 +20,7 @@
 }
 
 .header-content {
-  max-width: 800px;
+  max-width: var(--content-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -27,6 +30,7 @@
 
 .logo > a {
   text-decoration: none;
+  font-size: 0.8em;
   color: var(--font-color);
 }
 
@@ -43,12 +47,19 @@
   font-size: 1.1em;
 }
 
+.about,
 .posts {
   max-width: 100%;
+  font-family: var(--font-family);
 }
 
+.post {
+  padding: 20px 0;
+}
+
+.about-content,
 .posts-content {
-  max-width: 800px;
+  max-width: var(--content-width);
   margin: 0 auto;
 }
 
@@ -60,15 +71,100 @@
 .post-title {
   text-decoration: none;
   color: var(--font-color);
-  font-size: 1.5em;
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-light);
+  font-size: 2em;
+  font-weight: var(--font-weight-bold);
 }
 
 .post-title:hover {
   border-bottom: 1px solid #eee;
 }
 
+.post-description {
+  padding: 10px 0;
+  line-height: 2em;
+  font-weight: var(--font-weight-light);
+}
+
+.post-date {
+  display: inline-block;
+  font-weight: var(--font-weight-light);
+  font-size: 0.8em;
+  color: #777;
+}
+
 .pagination {
   padding: 20px;
 }
+
+.pagination > a {
+  font-weight: var(--font-weight-light);
+  font-size: 0.9em;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.pagination > a:hover {
+  color: #777;
+}
+
+.post-detail {
+  width: 100%;
+  font-family: var(--font-family);
+}
+
+.breadcrumbs > a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: var(--font-weight-light);
+  font-size: 0.9em;
+} 
+
+.breadcrumbs > a:hover {
+  color: #777;
+}
+
+.post-detail-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.post-detail-content h1, h2, h3 {
+  padding: 10px 0;
+}
+
+.post-detail-content h1 {
+  font-size: 2em;
+}
+
+.post-detail-content h2 {
+  font-size: 1.3em;
+}
+
+.post-detail-content p {
+  padding: 10px 0;
+  font-weight: var(--font-weight-light);
+  line-height: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+tbody {
+  font-weight: var(--font-weight-light);
+  font-size: 0.9em;
+}
+
+th {
+  font-weight: var(--font-weight-normal);
+  text-align: start;
+}
+
+th,
+td {
+  padding: 6px 13px;
+  border: 1px solid #ccc;
+}
+
