@@ -50,7 +50,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .logo > a {
@@ -148,7 +148,8 @@ img {
 }
 
 .breadcrumbs {
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs > a {
@@ -165,7 +166,7 @@ img {
 .post-detail-content {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 0 20px;
 }
 
 table {
