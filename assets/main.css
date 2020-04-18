@@ -24,7 +24,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 10px 20px;
 }
 
@@ -147,6 +147,11 @@
   line-height: 2em;
 }
 
+.post-detail-content img {
+  width: 100%;
+  height: auto;
+}
+
 table {
   border-collapse: collapse;
   margin: 10px 0;
@@ -165,6 +170,19 @@ th {
 th,
 td {
   padding: 6px 13px;
-  border: 1px solid #ccc;
+  border: 1px solid #d5d5d5;
 }
 
+.image-caption {
+  display: block;
+  margin: -10px 0;
+  text-align: center;
+  color: #777;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.tg-logo {
+  width: 20px;
+  height: 20px;
+}

@@ -3,14 +3,14 @@ title: All posts
 layout: default.njk
 pagination:
   data: collections.posts
-  size: 5
+  size: 10
   alias: posts
 ---
 
 <section class="posts">
   <div class="posts-content">
     <ul class="post-list">
-      {%- for post in posts %}
+      {%- for post in posts | reverse%}
         <li class="post">
           <a class="post-title" href="{{ post.url }}">{{ post.data.title }}</a>
           
