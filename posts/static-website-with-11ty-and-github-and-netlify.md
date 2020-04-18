@@ -20,7 +20,7 @@ Colons can be used to align columns.
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-![laptop image](images/laptop.jpeg)
+![laptop image](/assets/post-images/laptop.jpeg)
 <span class="image-caption">Laptop image</span>
 
 ``` js
